@@ -23,16 +23,21 @@ Project developed for the KU Leuven *Evolutionary Algorithms* course (group + in
 
 ## 📁 Project layout
 
+## 📁 Project layout
+
+```text
 ea-tsp/
-├── data/ # Sample distance-matrix CSVs (50 – 1000 cities)
-├── src/
-│ ├── r1024617.py # Main EA implementation (entry-point)
-│ └── Reporter.py # Logging helper supplied by course staff
+├── data/                     # Distance-matrix CSVs (50 – 1 000 cities)
+├── src/                      # Source code
+│   ├── r1024617.py           # Main EA implementation
+│   └── Reporter.py           # Logging helper (course-supplied)
 ├── docs/
-│ └── EA-TSP_Report.pdf # Full 12-page report (methodology + experiments)
+│   ├── EA-TSP_Report.pdf     # Final report
+│   └── EA-TSP_Intermediate.pdf  # Intermediate report
 ├── requirements.txt
-├── LICENSE # MIT
+├── LICENSE
 └── README.md
+
 
 
 ---
