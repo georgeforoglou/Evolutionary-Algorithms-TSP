@@ -1,1 +1,48 @@
-# Evolutionary-Algorithms-TSP
+# Evolutionary Algorithm for the Travelling Salesman Problem (EA-TSP)
+
+An **evolutionary algorithm (EA)** that tackles symmetric Travelling-Salesman instances up to **1 000 cities** in under five minutes.  
+Project developed for the KU Leuven *Evolutionary Algorithms* course (group + individual phases).
+
+---
+
+## ✨ Key Features
+
+| Component | Implementation |
+|-----------|----------------|
+| **Representation** | Permutation encoding (cycle closed by repeating start city) |
+| **Initialisation** | Hybrid: 80 % Nearest-Neighbour tours + 20 % random, each refined by *2-Opt* |
+| **Selection** | Fitness-sharing ➜ quadratic ranking |
+| **Crossover** | Partially-Mapped Crossover (*PMX*) with feasibility repair |
+| **Mutation** | Inversion + *2-Opt* local search |
+| **Elimination** | k-tournament with elitism |
+| **Speed-ups** | Critical loops `@njit`-compiled with **Numba** |
+
+*(Detailed design rationale is in the reports.)*
+
+---
+
+## 📁 Project layout
+
+ea-tsp/
+├── data/ # Sample distance-matrix CSVs (50 – 1000 cities)
+├── src/
+│ ├── r1024617.py # Main EA implementation (entry-point)
+│ └── Reporter.py # Logging helper supplied by course staff
+├── docs/
+│ └── EA-TSP_Report.pdf # Full 12-page report (methodology + experiments)
+├── requirements.txt
+├── LICENSE # MIT
+└── README.md
+
+
+---
+
+## 🚀 Quick-start
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Run on a 100-city instance
+python src/r1024617.py data/tour100.csv
+
