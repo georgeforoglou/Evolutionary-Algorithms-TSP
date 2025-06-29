@@ -1,6 +1,6 @@
 # Evolutionary Algorithm for the Travelling Salesman Problem (EA-TSP)
 
-An **evolutionary algorithm (EA)** that tackles symmetric Travelling-Salesman instances up to **1 000 cities** in under five minutes.  
+An **evolutionary algorithm (EA)** that tackles symmetric Travelling-Salesman instances up to **1000 cities** in under five minutes.  
 ---
 
 ## ✨ Key Features
