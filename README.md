@@ -23,8 +23,6 @@ Project developed for the KU Leuven *Evolutionary Algorithms* course (group + in
 
 ## 📁 Project layout
 
-## 📁 Project layout
-
 ```text
 ea-tsp/
 ├── data/                     # Distance-matrix CSVs (50 – 1 000 cities)
