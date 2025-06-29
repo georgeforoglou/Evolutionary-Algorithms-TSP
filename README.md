@@ -1,8 +1,6 @@
 # Evolutionary Algorithm for the Travelling Salesman Problem (EA-TSP)
 
 An **evolutionary algorithm (EA)** that tackles symmetric Travelling-Salesman instances up to **1 000 cities** in under five minutes.  
-Project developed for the KU Leuven *Evolutionary Algorithms* course (group + individual phases).
-
 ---
 
 ## ✨ Key Features
@@ -16,8 +14,6 @@ Project developed for the KU Leuven *Evolutionary Algorithms* course (group + in
 | **Mutation** | Inversion + *2-Opt* local search |
 | **Elimination** | k-tournament with elitism |
 | **Speed-ups** | Critical loops `@njit`-compiled with **Numba** |
-
-*(Detailed design rationale is in the reports.)*
 
 ---
 
