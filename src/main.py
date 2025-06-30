@@ -254,7 +254,7 @@ def population_obj_statistics(current_data, current_population, current_generati
 
 
 # Modify the class name to match your student number.
-class r1024617:
+class EA:
 
 	def __init__(self):
 		self.reporter = Reporter.Reporter(self.__class__.__name__)
@@ -572,8 +572,8 @@ class r1024617:
 #     return current_sigma
 
 if __name__ == '__main__':
-	a = r1024617()
+	a = EA()
 
-	# Call the file (r1024617.py) in the terminal with an argunment like "tour50.csv"
-	# Example: python3 r1024617.py "tour50.csv"
+	# Call the file (main.py) in the terminal with an argunment like "tour50.csv"
+	# Example: python3 main.py "tour50.csv"
 	a.optimize(sys.argv[1])
